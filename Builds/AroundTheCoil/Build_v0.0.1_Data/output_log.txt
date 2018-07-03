@@ -1,0 +1,64 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   23.21.13.9077
+Begin MonoManager ReloadAssembly
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.269 seconds
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: A:\My Files\Game Projects\Game Jams\NSI Jams\2018 MONTAGE\Game Jam 2018 - Slinky Game [Montage]\Builds\AroundTheCoil\Build_v0.0.1_Data\Managed\System.dll (this message is harmless)
+desktop: 5760x1080 59Hz; virtual: 5760x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Serialization depth limit 7 exceeded at 'Node.subNodes'. There may be an object composition cycle in one or more of your serialized classes.
+
+Serialization hierarchy:
+8: Node.subNodes
+7: Node.subNodes
+6: Node.subNodes
+5: Node.subNodes
+4: Node.subNodes
+3: Node.subNodes
+2: Node.subNodes
+1: Node.subNodes
+0: MenuManager.topNode
+
+ 
+(Filename:  Line: 84)
+
+UnloadTime: 1.101494 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2120 -> priority: 1 
+  Thread -> id: 254c -> priority: 1 
+  Thread -> id: 314c -> priority: 1 
+  Thread -> id: 42f0 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.671966 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3742.
+Total: 0.779625 ms (FindLiveObjects: 0.205630 ms CreateObjectMapping: 0.109042 ms MarkObjects: 0.440321 ms  DeleteObjects: 0.023801 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.832335 ms
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 3774.
+Total: 0.827227 ms (FindLiveObjects: 0.141699 ms CreateObjectMapping: 0.115961 ms MarkObjects: 0.474638 ms  DeleteObjects: 0.094651 ms)
+

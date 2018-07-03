@@ -1,0 +1,33 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameScripts\GameOver.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GameScripts\SlinkyDied.cs" Line="15" Column="8" />
+      <File FileName="Assets\Scripts\GameScripts\ProcGen.cs" Line="136" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\SlinkyData.cs" Line="23" Column="5" />
+      <File FileName="Assets\Scripts\GameScripts\SlinkyInit.cs" Line="11" Column="27" />
+      <File FileName="Assets\Scripts\GameScripts\TextType.cs" Line="1" Column="1" />
+      <File FileName="Assets\Shaders\3DText.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\TriggerType.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\ZoneTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\Blink.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\SceneSetup.cs" Line="15" Column="38" />
+      <File FileName="Assets\Scripts\GameScripts\SlinkySensors.cs" Line="13" Column="33" />
+      <File FileName="Assets\Scripts\GameScripts\CameraCast.cs" Line="30" Column="4" />
+      <File FileName="Assets\Scripts\GameScripts\ColorChanger.cs" Line="24" Column="38" />
+      <File FileName="Assets\Scripts\GameScripts\HoverRotate.cs" Line="22" Column="31" />
+      <File FileName="Assets\Scripts\GameScripts\SlinkyFlip.cs" Line="217" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\Score.cs" Line="52" Column="1" />
+      <File FileName="Assets\Scripts\GameScripts\GameOver.cs" Line="35" Column="37" />
+      <File FileName="Assets\Scripts\GameScripts\MasterReferences.cs" Line="10" Column="23" />
+      <File FileName="Assets\Scripts\Global\RandomMatCol.cs" Line="8" Column="30" />
+      <File FileName="Assets\Scripts\GameScripts\PulseEmission.cs" Line="30" Column="3" />
+      <File FileName="Assets\Scripts\GameScripts\SlinkyController.cs" Line="59" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

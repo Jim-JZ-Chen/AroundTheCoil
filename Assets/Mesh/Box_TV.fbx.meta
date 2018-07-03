@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: f760fcab876ff734ea3d6117c0aa6818
+timeCreated: 1530332552
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Block1
+    100002: Block2
+    100004: Block3
+    100006: //RootNode
+    100008: Box_tv
+    100010: Lid
+    100012: O
+    100014: S
+    100016: T
+    100018: Y
+    100020: Box_Tv
+    100022: fore_ground
+    100024: GreenTubi
+    100026: Hill
+    100028: PurpleTubi
+    100030: RedTubi
+    100032: TubiEniroment
+    100034: YellowTubi
+    400000: Block1
+    400002: Block2
+    400004: Block3
+    400006: //RootNode
+    400008: Box_tv
+    400010: Lid
+    400012: O
+    400014: S
+    400016: T
+    400018: Y
+    400020: Box_Tv
+    400022: fore_ground
+    400024: GreenTubi
+    400026: Hill
+    400028: PurpleTubi
+    400030: RedTubi
+    400032: TubiEniroment
+    400034: YellowTubi
+    2300000: Block1
+    2300002: Block2
+    2300004: Block3
+    2300006: Box_tv
+    2300008: Lid
+    2300010: O
+    2300012: S
+    2300014: T
+    2300016: Y
+    2300018: Box_Tv
+    2300020: fore_ground
+    2300022: GreenTubi
+    2300024: Hill
+    2300026: PurpleTubi
+    2300028: RedTubi
+    2300030: YellowTubi
+    3300000: Block1
+    3300002: Block2
+    3300004: Block3
+    3300006: Box_tv
+    3300008: Lid
+    3300010: O
+    3300012: S
+    3300014: T
+    3300016: Y
+    3300018: Box_Tv
+    3300020: fore_ground
+    3300022: GreenTubi
+    3300024: Hill
+    3300026: PurpleTubi
+    3300028: RedTubi
+    3300030: YellowTubi
+    4300000: Box_tv
+    4300002: Y
+    4300004: O
+    4300006: S
+    4300008: T
+    4300010: Lid
+    4300012: Block2
+    4300014: Block3
+    4300016: Block1
+    4300018: Box_Tv
+    4300020: PurpleTubi
+    4300022: YellowTubi
+    4300024: Hill
+    4300026: GreenTubi
+    4300028: RedTubi
+    4300030: fore_ground
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
