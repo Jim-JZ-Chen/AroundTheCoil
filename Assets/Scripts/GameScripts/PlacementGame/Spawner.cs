@@ -45,13 +45,18 @@ public class Spawner : MonoBehaviour {
         List<int> removals = new List<int>();
         for (int i = 0; i < placeables.Count; i++)
         {
-            PlaceableControl reference = placeables[i].GetComponent<PlaceableControl>();
-            if (reference.howIFeel != PlaceableControl.Condition.MarriedWithKids && Time.time > reference.startAlive + timeAlive)
+            if (placeables[i] != null)
             {
-                if (reference.DeathsDoor()) {
-                    removals.Add(i);
+                PlaceableControl reference = placeables[i].GetComponent<PlaceableControl>();
+                if (reference.howIFeel != PlaceableControl.Condition.MarriedWithKids && Time.time > reference.startAlive + timeAlive)
+                {
+                    if (reference.DeathsDoor())
+                    {
+                        removals.Add(i);
+                    }
                 }
             }
+            else { removals.Add(i); }
         }
         //remove
         foreach (int i in removals)

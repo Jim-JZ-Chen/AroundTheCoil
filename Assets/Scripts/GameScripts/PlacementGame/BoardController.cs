@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BoardController : MonoBehaviour {
     public BoardPlace[,] board;
+    public NaughCrossScorer scorer;
     public List<PlacementZoneScript> places = new List<PlacementZoneScript>(); // make the board through this
-
     //board size
     int maxX = 3;
     int maxY = 3;
@@ -29,7 +29,8 @@ public class BoardController : MonoBehaviour {
 
 
 
-    public void PlacementUpdate(BoardPlace.BoardFill fill, Vector3 placeRef ) {
+    public void PlacementUpdate(BoardPlace.BoardFill fill, Vector3 placeRef)
+    {
         //update placement
         for (int x = 0; x < maxX; x++)
         {
@@ -41,15 +42,18 @@ public class BoardController : MonoBehaviour {
                 }
             }
         }
+        if(fill != BoardPlace.BoardFill.none) {
         //check for win then check for draw
         if (CheckWin(fill))
         {
             EndState(fill);
         }
-        else if(CheckDraw()){
+        else if (CheckDraw())
+        {
             EndState(BoardPlace.BoardFill.none);
 
         }
+    }
     }
 
     //this can probably be better, look into more elegant design!
@@ -99,19 +103,30 @@ public class BoardController : MonoBehaviour {
 
 
     void BoardWipe() {
-
-
+        foreach (PlacementZoneScript place in places) {
+            place.Wipe();
+        }
     }
 
     void EndState(BoardPlace.BoardFill result) {
         //check who the winner is
 
         //and a winner is
-        print("the winner is "+ result);
+        print("End state Activated");
+        if (result != BoardPlace.BoardFill.none)
+        {
+            print("Results are'nt a draw");
 
+            int toAdd = result == BoardPlace.BoardFill.Naught ? 0 : 1;
+            scorer.AddScore(toAdd, 5);
+        }
+        else {
 
+            //do something to indciate a bad job
+
+        }
         //wipe board
-
+        Invoke("BoardWipe", 1.5f);
     }
 }
 

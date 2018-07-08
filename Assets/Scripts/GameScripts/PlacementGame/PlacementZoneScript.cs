@@ -8,6 +8,7 @@ public class PlacementZoneScript : MonoBehaviour {
     public BoardController boardControl;
     public GameObject myKey; // this is used in case we want a specific item placed here
     public LayerMask grabbableMask;
+    public GameObject currentKey;
     Transform myTransform;
     //variables
     bool locked = false; // if true we dont accept any new keys
@@ -38,6 +39,7 @@ public class PlacementZoneScript : MonoBehaviour {
             }
         }
         locked = true;
+        currentKey = key;
         //destroy stuff
         if (key.GetComponent<Joint>() != null) {
             Destroy(key.GetComponent<Joint>());
@@ -50,6 +52,15 @@ public class PlacementZoneScript : MonoBehaviour {
         boardControl.PlacementUpdate(fillReturn, myTransform.position);
 
     }
+
+    public void Wipe() {
+        if (currentKey != null) {
+            Destroy(currentKey);
+            fillReturn = BoardPlace.BoardFill.none;
+            boardControl.PlacementUpdate(fillReturn, myTransform.position);
+        }
+    }
+
 
     //change this to not flip keys over
     IEnumerator CineMove(GameObject key) {
@@ -94,14 +105,21 @@ public class PlacementZoneScript : MonoBehaviour {
         if (!locked)
         {
             GameObject key = collision.gameObject;
-            if (key.CompareTag("Naught") || key.CompareTag("Cross"))
+            if (key.CompareTag("Naught"))
             {
+                fillReturn = BoardPlace.BoardFill.Naught;
                 //check rotation
                 if (ValidRotation(key))
                 {
                     StartSetting(key);
-                    //change this later
-                    fillReturn = BoardPlace.BoardFill.Naught;
+                }
+            }
+            else if (key.CompareTag("Cross"))
+            {    //check rotation
+                if (ValidRotation(key))
+                {
+                    fillReturn = BoardPlace.BoardFill.Cross;
+                    StartSetting(key);
                 }
             }
         }
