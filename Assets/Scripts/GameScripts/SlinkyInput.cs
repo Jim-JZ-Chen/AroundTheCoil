@@ -10,6 +10,9 @@ public class SlinkyInput : MonoBehaviour {
 
 	void Update ()
     {
+       //input is always 1 or -1, resting at -1 || this is the input for Ps4 left trigger -> 4th axis
+       // print("Raw input = "+Input.GetAxisRaw("Tex_Debug_TriggerLower"));
+       // print("Smooth input = " + Input.GetAxis("Tex_Debug_TriggerLower"));
 
         switch (playerID)
         {
@@ -54,14 +57,25 @@ public class SlinkyInput : MonoBehaviour {
 
 		if (Input.GetButton("LB_1"))
 		{
-			master.flip.setControlNodeGrabbing (true);
+			//master.flip.setControlNodeGrabbing (true);
 			master.controller.Fly();
 		}
 		else
 		{
-			master.flip.setControlNodeGrabbing (false);
+			//master.flip.setControlNodeGrabbing (false);
 			master.controller.NoFly();
 		}
+
+        if (Input.GetAxisRaw("Tex_Debug_TriggerLower") >= 0)
+        {
+            //grabbing
+            master.flip.setControlNodeGrabbing(true);
+
+        }else {
+            //not grabbing
+            master.flip.setControlNodeGrabbing(false);
+        }
+
 
     }
 

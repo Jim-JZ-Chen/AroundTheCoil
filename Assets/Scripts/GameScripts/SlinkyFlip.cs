@@ -28,27 +28,29 @@ public class SlinkyFlip : MonoBehaviour {
 
 
 	public GameObject connectParticles;
-
+    FixedJoint grabbedObject;
 
 	// new functions
 	public void setControlNodeGrabbing(bool input){
 		grabbing = input;
 		if (holding && !grabbing) {
 			holding = false;
-			//let go function
-			Transform temp = controlledNode.transform.GetChild (0);
-			temp.transform.SetParent(null);
-			temp.gameObject.AddComponent<Rigidbody> ();
+            //let go function
+            //grabbedObject.connectedBody = null;
+            Destroy(grabbedObject);
+			
 		}
 	}
 
 
-	void GrabObject(GameObject grabbed){
-		//print("grabbable touched");
-		grabbed.transform.SetParent(controlledNode.transform);
-		Object.Destroy (grabbed.gameObject.GetComponent<Rigidbody> ());
-		//baby = hit.collider.gameObject;
-		holding = true;
+    void GrabObject(GameObject grabbed)
+    {
+        if (!holding) { 
+        //grabbedObject = grabbed.GetComponent<FixedJoint>();
+        grabbedObject = grabbed.AddComponent<FixedJoint>();
+        grabbedObject.connectedBody = controlledNode.GetComponent<Rigidbody>();
+        holding = true;
+    }
 	}
 
 
