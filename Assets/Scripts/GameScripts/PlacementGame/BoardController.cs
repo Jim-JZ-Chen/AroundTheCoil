@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoardController : MonoBehaviour {
+    //references
     public BoardPlace[,] board;
     public NaughCrossScorer scorer;
     public List<PlacementZoneScript> places = new List<PlacementZoneScript>(); // make the board through this
@@ -10,7 +11,7 @@ public class BoardController : MonoBehaviour {
     int maxX = 3;
     int maxY = 3;
 
-	// Use this for initialization
+	//initialization
 	void Start () {
         board = new BoardPlace[maxX, maxY];
         int placedLoopNumb = 0;
@@ -22,16 +23,13 @@ public class BoardController : MonoBehaviour {
                 placedLoopNumb++;
             }
         }
-
-
-
 	}
 
 
-
+    //this can probably be done more efficiently, make better after beer and pixels
     public void PlacementUpdate(BoardPlace.BoardFill fill, Vector3 placeRef)
     {
-        //update placement
+        //update placements
         for (int x = 0; x < maxX; x++)
         {
             for (int y = 0; y < maxY; y++)
@@ -51,7 +49,6 @@ public class BoardController : MonoBehaviour {
         else if (CheckDraw())
         {
             EndState(BoardPlace.BoardFill.none);
-
         }
     }
     }
@@ -101,7 +98,7 @@ public class BoardController : MonoBehaviour {
                 return true;
     }
 
-
+    //wipes the board!
     void BoardWipe() {
         foreach (PlacementZoneScript place in places) {
             place.Wipe();
@@ -112,17 +109,13 @@ public class BoardController : MonoBehaviour {
         //check who the winner is
 
         //and a winner is
-        print("End state Activated");
         if (result != BoardPlace.BoardFill.none)
         {
-            print("Results are'nt a draw");
-
             int toAdd = result == BoardPlace.BoardFill.Naught ? 0 : 1;
             scorer.AddScore(toAdd, 5);
         }
         else {
-
-            //do something to indciate a bad job
+            //do something to indciate a bad job, like play a sound or display some bad times text
 
         }
         //wipe board

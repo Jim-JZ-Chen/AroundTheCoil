@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NaughCrossScorer : MonoBehaviour {
+
+    //references
+    public Spawner spawner;
+    //copunt down timer
+    public float timer;
+    public TextMesh timerText, timerShadow;
+    bool counting = true;
     //team 1 = naughts
     int team1Score = 0;
     public TextMesh team1NameText, team1NameShadow,  team1ScoreText, team1ScoreShadow;
@@ -17,9 +24,22 @@ public class NaughCrossScorer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (counting)
+        {
+            timer -= Time.deltaTime;
+            timerText.text = timerShadow.text = Mathf.RoundToInt(timer).ToString();
+            if (timer <= 0f)
+            {
+                EndTheGame();
+                counting = false;
+            }
+        }
 	}
 
+    void EndTheGame() {
+        spawner.enabled = false;
+
+    }
 
     public void AddScore(int team, int score) {
         if (team == 0)

@@ -57,6 +57,7 @@ public class PlacementZoneScript : MonoBehaviour {
         if (currentKey != null) {
             Destroy(currentKey);
             fillReturn = BoardPlace.BoardFill.none;
+            locked = false;
             boardControl.PlacementUpdate(fillReturn, myTransform.position);
         }
     }
