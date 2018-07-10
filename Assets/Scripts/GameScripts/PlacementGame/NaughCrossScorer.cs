@@ -6,6 +6,7 @@ public class NaughCrossScorer : MonoBehaviour {
 
     //references
     public Spawner spawner;
+    public GameObject scoreChangeText;
     //copunt down timer
     public float timer;
     public TextMesh timerText, timerShadow;
@@ -19,8 +20,8 @@ public class NaughCrossScorer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-	}
+        scoreChangeText = Resources.Load("Prefab/NaughtCross/Increase") as GameObject;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -38,20 +39,32 @@ public class NaughCrossScorer : MonoBehaviour {
 
     void EndTheGame() {
         spawner.enabled = false;
-
     }
 
     public void AddScore(int team, int score) {
         if (team == 0)
         {
             team1Score += score;
+            string announcement = score > 0 ? "+" + score : "-" + score;
+            ScoreChangeAnimation(team, announcement);
         }
         else {
             team2Score += score;
+            string announcement = score > 0 ? "+" + score : "-" + score;
+            ScoreChangeAnimation(team, announcement);
         }
         UpdateDisplay();
         //add score thingy
     }
+
+    //not really an animation, didnt have a better term
+    void ScoreChangeAnimation(int team, string report) {
+        Transform teamTransform = team == 0 ? team1ScoreText.transform : team2ScoreText.transform;
+        Instantiate(scoreChangeText, teamTransform.position,teamTransform.rotation);
+        
+
+    }
+
 
     void UpdateDisplay() {
         team1ScoreText.text = team1ScoreShadow.text = "Score: " + team1Score;

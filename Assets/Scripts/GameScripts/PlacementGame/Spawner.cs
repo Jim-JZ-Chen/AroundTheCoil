@@ -25,7 +25,9 @@ public class Spawner : MonoBehaviour {
     void Start() {
         naught = Resources.Load("Prefab/NaughtCross/Naught") as GameObject;
         cross = Resources.Load("Prefab/NaughtCross/Cross") as GameObject;
-        targetTime = Time.time + spawnInbetweenTime;
+        // targetTime = Time.time + spawnInbetweenTime;
+        TimerTick();
+        TimerTick();
     }
 
     // Update is called once per frame

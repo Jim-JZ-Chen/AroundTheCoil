@@ -294,6 +294,7 @@
     <Compile Include="Assets\Scripts\GameScripts\LavaScript.cs" />
     <Compile Include="Assets\Scripts\GameScripts\MasterReferences.cs" />
     <Compile Include="Assets\Scripts\GameScripts\PlacementGame\BoardController.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\PlacementGame\DeleteSelf.cs" />
     <Compile Include="Assets\Scripts\GameScripts\PlacementGame\NaughCrossScorer.cs" />
     <Compile Include="Assets\Scripts\GameScripts\PlacementGame\PlaceableControl.cs" />
     <Compile Include="Assets\Scripts\GameScripts\PlacementGame\PlacementZoneScript.cs" />
